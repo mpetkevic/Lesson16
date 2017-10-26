@@ -1,12 +1,12 @@
-$('.icon').click(function(){
-    if ($('.icon').hasClass('ion-android-menu')) {
+$('.fa').click(function(){
+    if ($('.fa').hasClass('fa-bars')) {
         console.log('Has Class!!!');
-        $('.icon').removeClass('ion-android-menu');
-        $('.icon').addClass('ion-android-close');
+        $('.fa').removeClass('fa-bars');
+        $('.fa').addClass('fa-times');
         $('.menu').css('transform', 'translateX(0%)');
     } else {
-        $('.icon').removeClass('ion-android-close');
-        $('.icon').addClass('ion-android-menu');
+        $('.fa').removeClass('fa-times');
+        $('.fa').addClass('fa-bars');
         $('.menu').css('transform', 'translateX(-100%)')
     };
 });
